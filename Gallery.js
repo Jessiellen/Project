@@ -32,7 +32,7 @@ export default class Gallery {
     }
 
     removeArtPiece(index) {
-        if (index >= 0 && index < this.artPieces.length) {
+        if (index >= 0 && index < this.ArtPieces.length) {
           galleryElement.removeChild(galleryElement.childNodes[index]);
           this.artPieces.splice(index, 1);
         } else {
