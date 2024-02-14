@@ -31,13 +31,15 @@ export default class Gallery {
     this.#view.appendChild(nextArt.view)
     }
 
-    removeArtPiece(index) {
-        if (index >= 0 && index < this.ArtPieces.length) {
-          galleryElement.removeChild(galleryElement.childNodes[index]);
-          this.artPieces.splice(index, 1);
+    removeArtPieceByTitle(title) {
+        const indexToRemove = this.artPieces.findIndex(artPiece => artPiece.title === title);
+
+        if (indexToRemove !== -1) {
+          galleryElement.removeChild(galleryElement.childNodes[indexToRemove]);
+          this.artPieces.splice(indexToRemove, 1);
         } else {
-          console.log('Error, não é possível remover a obra de arte.');
-    }
+          console.log("A Obra de arte com o título {title} não foi encontrada");
+        }
       
 }
 }
