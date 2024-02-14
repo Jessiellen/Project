@@ -30,5 +30,15 @@ export default class Gallery {
     }
     this.#view.appendChild(nextArt.view)
     }
+
+    removeArtPiece(index) {
+        if (index >= 0 && index < this.artPieces.length) {
+          galleryElement.removeChild(galleryElement.childNodes[index]);
+          this.artPieces.splice(index, 1);
+        } else {
+          console.log('Error, não é possível remover a obra de arte.');
+    }
+      
+}
 }
 
