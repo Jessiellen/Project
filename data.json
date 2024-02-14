@@ -1,0 +1,45 @@
+[
+    {
+        "type": "Painting",
+        "title": "The Starry Nigth",
+        "medium": "Oil paint and acrylic paint",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/525px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+        "artist":"Vicent Van Gogh" 
+    },
+    {
+        "type": "Painting",
+        "title": "The Scream",
+        "medium": " Oil and pastel on cardboard",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/330px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+        "artist":"Edvard Munch" 
+    },
+    {
+        "type": "Photo",
+        "title": "Philosophers Tree",
+        "medium": "Non-digital, silver photographic, with Hasselblad cameras",
+        "image": "https://viewcameraaustralia.org/wp-content/uploads/2018/06/3102.jpg",
+        "artist":"Michael Kenna" 
+    },
+    {
+        "type": "Photo",
+        "title": "Jesus is my Homeboy: Last Supper",
+        "medium": "Cameras such as the Hasselblad 503CW, 35mm cameras like the Canon EOS 5D Mark IV",
+        "image": "https://live-production.wcms.abc-cdn.net.au/0eead81ffe2cbcc0550e8f5b05676a1b?impolicy=wcms_crop_resize&cropH=2001&cropW=3000&xPos=0&yPos=0&width=862&height=575",
+        "artist":"David Lachapelle" 
+    },
+    {
+        "type": "Sculpture",
+        "title": "Descension",
+        "medium": "Piece of art built in steel and by pairing  gyrating pool of water that is powered by a motor at the bottom.",
+        "image": "https://www.artnews.com/wp-content/uploads/2017/05/05-17wqaanish-kapoor1.jpg",
+        "artist":"Anish Kapoor" 
+    },
+    {
+        "type": "Sculpture",
+        "title": "Bouquet Flowers",
+        "medium": "Polychromed bronze, stainless steel, and aluminum",
+        "image": "https://media.newyorker.com/photos/5da09fe541f7ae000946fab9/master/w_2560%2Cc_limit/Collins-JeffKoons.jpg",
+        "artist":"Jake Koons" 
+    }
+]
+    
