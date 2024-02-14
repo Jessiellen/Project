@@ -6,26 +6,22 @@
 
 
 body {
-  background: radial-gradient(ellipse at center, red, #0000ff);
+  background: radial-gradient(ellipse at center, rgb(155, 44, 44), #0d0d61);
   align-items: center;
+  scrollbar-color: rgb(6, 6, 120)rgb(155, 44, 44);
+  scrollbar-width: 12px;
   
   
 }
 
 #gallery-view {
-  width: 50%;
-  text-align: center;
-    height: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    align-content: stretch;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 100px;
-    padding-top: 50px;
-    
   
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    grid-area: gallery;
+    overflow-y: scroll;
+
 }
 
 img {
@@ -34,68 +30,69 @@ img {
   border-radius: 20px;
   grid-area: "item";
 
- 
-
 }
 
 #inf-view {
-  position: fixed;
-  top: 90px;
-  padding-left: 30px;
-  background-color:rgb(89, 89, 173);
+  width: 200px;
+  font-size: 20px;
+  font-family: Bellefair;
+  grid-area: infor;
+  max-width: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(40, 54, 255, 0.3);
+ 
 }
 
 .title {
   width: 100%;
-  height: 100px;
   font-size: 42px;
   font-family: Bellefair;
   font-style: normal;
   font-weight: bold;
   text-align: center;
   padding: 18px;
-  background-color: rgb(193, 22, 119);
+  background-color: rgb(155, 44, 44);
   border-radius: 10px;
   grid-area: title;
   justify-self: center;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
+  height: 100dvh ;
   margin: 0 auto;
   border: 0px solid white;
   display: grid;
   grid-template-areas: 
-  "title title title"
-  "sidenav item item"
-  "sidenav item item";
+  "title title title title"
+  "sidenav gallery gallery infor";
   padding: 5px;
   grid-template-columns: 30% auto 30%;
+  grid-template-rows: 90px auto;
   gap: 10px;
   justify-items: center;
+  overflow: hidden;
 
 }
 
 .sidenav {
-  width: 100%;
-  height: 1200px;
+
   background-color: rgba(40, 54, 255, 0.3);
   border-radius: 20px;
-  grid-area: "sidenav";
-  grid-row: sidenav;
+  grid-area: sidenav;
 
 }
 
 .item {
-  width: 290px;
-  height: 290px;
   border-radius: 20px;
+  flex-basis: calc(50% - 10px);
 }
 
 #img-sidenav {
-  width: 300px !important;
-  height: 400px!important;
-  padding-left: 35px;
+  width: auto !important;
+  height: 200px !important;
+  padding-left: 100px;
   padding-top: 20px;
   text-align: center;
 
@@ -104,7 +101,7 @@ img {
 h1 {
   text-align: center;
   font-family: Bellefair;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 36px */
@@ -114,26 +111,24 @@ h1 {
   padding: 10px;
 }
 
-h5 {
+h3 {
   text-align: center;
   font-size: 25px;
   font-style: inherit;
   font-weight: bold;
-  line-height: 150%; /* 36px */
   align-items: center;
-  margin: 2%;
   justify-content: space-between;
-  padding: 80px;
+  padding: 10px;
 }
 
 #social-media {
-  width: 350px !important;
+  width: 250px !important;
   height: 50px!important;
   display: flex;
   border-radius: 0;
   align-items: flex-end;
-  margin: 3px;
-  
- 
-  
+  margin: 50px; 
+  background-size: cover; 
+  background-position: center bottom;
 }
+

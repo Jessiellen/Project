@@ -11,6 +11,7 @@ window.onload = async () => {
         title.innerText = ArtPiece.title;
         artist.innerText = ArtPiece.artist;
         medium.innerText = ArtPiece.medium;
+        type.innerText = ArtPiece.type;
     new script(gallery.addArtPiece())
 });
     result.forEach(item => {
@@ -20,14 +21,6 @@ window.onload = async () => {
     const title = document.querySelector("#title")
     const artist = document.querySelector("#artist")
     const medium = document.querySelector("#medium")
+    const type = document.querySelector("#type")
 
-    function showInf(infoId) {
-        const allInfo = document.querySelectorAll('inf-view');
-        allInfo.forEach(info => info.style.display = 'none');
-  
-        
-        const infoCorrespondente = document.getElementById(inf-view);
-        
-        infoCorrespondente.style.display = 'block';
-      }
 }

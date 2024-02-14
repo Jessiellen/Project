@@ -29,5 +29,6 @@ export default class Gallery {
                 break;
     }
     this.#view.appendChild(nextArt.view)
-}
     }
+}
+
